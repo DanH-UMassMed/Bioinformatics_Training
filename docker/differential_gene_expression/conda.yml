@@ -1,0 +1,23 @@
+name: de-seq-tools
+channels:
+  - defaults 
+  - bioconda
+  - conda-forge
+dependencies:
+  - r-essentials 
+  - r-biocmanager
+  - r-tidyverse
+  - r-rcolorbrewer
+  - r-pheatmap
+  - r-ggrepel
+  - r-cowplot
+  - bioconductor-deseq2
+  - bioconductor-clusterprofiler
+  - bioconductor-dose
+  - bioconductor-org.hs.eg.db
+  - bioconductor-org.ce.eg.db
+  - bioconductor-pathview
+  - bioconductor-degreport
+  - bioconductor-tximport
+  - bioconductor-annotationhub
+  - bioconductor-ensembldb
