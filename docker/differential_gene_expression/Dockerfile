@@ -23,3 +23,5 @@ RUN R -e "library(BiocManager); install(c('clusterProfiler','DOSE','org.Hs.eg.db
 RUN echo "rstudio ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers && \
     chmod 0440 /etc/sudoers && \
     chmod g+w /etc/passwd 
+
+

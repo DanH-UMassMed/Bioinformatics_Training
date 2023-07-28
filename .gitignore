@@ -1,0 +1,7 @@
+# Directories to ignore
+**/raw_data/
+**/reference_data
+**/results/
+
+# Files to ignore
+.DS_Store

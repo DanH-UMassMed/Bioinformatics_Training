@@ -1,4 +1,5 @@
 #!/bin/bash
+LOCAL_PRJ_DIR="/Users/dan/Code/NextFlow/Bioinformatics_Training/Introduction_to_RNA-seq"
 USER="danhumassmed"
 TAG="dge_software"
 VERSION="1.0.1"
@@ -14,5 +15,6 @@ echo docker build -t ${USER}/${TAG}:${VERSION} .
 echo docker push ${USER}/${TAG}:${VERSION}
 echo "********************************************"
 echo docker run -it ${USER}/${TAG}:${VERSION} /bin/bash
-echo docker run --rm -p 8787:8787 -e PASSWORD=password -v /home/dan/projects:/home/rstudio/projects ${USER}/${TAG}:${VERSION}
+echo docker run --rm -p 8787:8787 -e PASSWORD=password -v ${LOCAL_PRJ_DIR}:/home/rstudio/projects ${USER}/${TAG}:${VERSION}
+
 
