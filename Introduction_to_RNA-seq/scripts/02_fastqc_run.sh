@@ -2,7 +2,7 @@
 ### Quality control using FASTQC ###
 
 #local_project_dir=$1
-local_project_dir="/Users/dan/Code/NextFlow/Bioinformatics_Training/Introduction_to_RNA-seq"
+local_project_dir="${HOME}/Code/NextFlow/Bioinformatics_Training/Introduction_to_RNA-seq"
 docker_project_dir="/home/rnaseq"
 input_dir="raw_data"
 output_dir="results/fastqc/"
